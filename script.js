@@ -7,5 +7,12 @@ for(let i = 0; i <16 ; i++){
         const item = document.createElement('div');
         item.classList.add('item');
         container.appendChild(item);
+
+        const hover = document.querySelector('.item');
+hover.addEventListener('mouseover',()=>{
+    hover.style.backgroundColor = 'yellow';
+})
+
     }
 }
+
