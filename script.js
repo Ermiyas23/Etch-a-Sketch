@@ -1,3 +1,9 @@
+const start = document.querySelector('#click-me');
+start.addEventListener('click',() => {
+    const Enter = prompt('any number less than 100 for fun', 1);
+    let userNum = parseInt(Enter);
+})
+
 
 const container = document.createElement('div');
 container.classList.add('container');
