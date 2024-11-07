@@ -1,5 +1,12 @@
 const start = document.querySelector('#click-me');
-start.addEventListener('click',user)
+start.addEventListener('click',() => {
+    let showNum =user();
+if(showNum >= 1 && showNum <= 100){
+    newGrid(showNum);
+}else{
+    old();
+}
+})
 
 function user(userNum){
     const Enter = prompt('any number less than 100 for fun', 1);
@@ -7,14 +14,7 @@ function user(userNum){
     return userNum ;
     
 }
-let showNum =user();
-if(showNum >= 1 && showNum <= 100){
-    newGrid(showNum);
 
-}else{
-    old();
-
-}
 function old(){
     const container = document.createElement('div');
 container.classList.add('container');
@@ -43,7 +43,7 @@ function newGrid(showNum){
 container.classList.add('container');
 document.body.appendChild(container);
 
-for(let i = 0; i <showNum ; i++){
+for(let i = 0; i <showNum  ; i++){
     for(let j = 0; j < showNum ; j++){
         const item = document.createElement('div');
         item.classList.add('item');
