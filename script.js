@@ -8,15 +8,16 @@ if(showNum >= 1 && showNum <= 100){
 }
 })
 
+let container;
+
 function user(userNum){
     const Enter = prompt('any number less than 100 for fun', 1);
     userNum = parseInt(Enter);
     return userNum ;
-    
 }
 
 function old(){
-    const container = document.createElement('div');
+container = document.createElement('div');
 container.classList.add('container');
 document.body.appendChild(container);
 
@@ -33,13 +34,12 @@ hover.forEach(item=> {
     item.addEventListener('mouseover',()=>{
         item.style.backgroundColor = 'Gray';
     })
-   
 });
 
 }
 
 function newGrid(showNum){
-    const container = document.createElement('div');
+container = document.createElement('div');
 container.classList.add('container');
 document.body.appendChild(container);
 
