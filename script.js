@@ -8,6 +8,13 @@ if(showNum >= 1 && showNum <= 100){
 }
 })
 
+function getRandomRGB() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g},${b})`;
+   
+  }
 let container;
 
 function user(userNum){
@@ -54,7 +61,7 @@ for(let i = 0; i <showNum  ; i++){
 const hover = document.querySelectorAll('.item');
 hover.forEach(item=> {
     item.addEventListener('mouseover',()=>{
-        item.style.backgroundColor = 'Gray';
+        item.style.backgroundColor = getRandomRGB();
     })
    
 });

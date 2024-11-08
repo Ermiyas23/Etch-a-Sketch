@@ -1,3 +1,13 @@
+.name{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color:royalblue;
+    font-weight: 900;
+    font-size: 35px;
+    font-style: oblique;
+}
+
 button{
     text-align: center;
     background-color: aquamarine;
